@@ -1,6 +1,5 @@
 
 ![Redmi 9T](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-9-power-0.jpg "Redmi 9T")
-Redmi 9T source - twrp
 =====================================================
 Basic   | Specs
 -------:|:-------------------------
