@@ -16,3 +16,26 @@ Front Camera | 8 MP, f/2.1, (wide), 1/4.0", 1.12µm
 Release Date | 2021, January 08
 
 
+## Working :
+
+- ADB
+
+- Decryption userdata with eu roms
+
+- Screen brightness settings
+
+- Correct screenshot color
+
+- MTP
+
+- Sideload
+
+## To compile
+
+- build/envsetup.sh
+
+- export ALLOW_MISSING_DEPENDENCIES=true
+
+- lunch 
+
+- make -jX recoveryimage
