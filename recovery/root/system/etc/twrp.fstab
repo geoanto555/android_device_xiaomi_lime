@@ -15,8 +15,8 @@ product		/product		ext4		display="Product";logical
 /cache         ext4    /dev/block/bootdevice/by-name/cache
 /recovery      emmc    /dev/block/bootdevice/by-name/recovery                    flags=backup=1
 /firmware      vfat    /dev/block/bootdevice/by-name/modem                       flags=display="Firmware"
-/cust          ext4    /dev/block/bootdevice/by-name/cust                        flags=display="Cust"
-/misc          emmc    /dev/block/bootdevice/by-name/misc
+/cust          ext4    /dev/block/bootdevice/by-name/cust                        flags=display="Cust";backup=1
+/cust_image    ext4    /dev/block/bootdevice/by-name/cust                        flags=display="Cust";flashimg=1
 /modem         emmc    /dev/block/bootdevice/by-name/modem                       flags=backup=1;display="Modem"
 /bluetooth     emmc    /dev/block/bootdevice/by-name/bluetooth                   flags=backup=1;subpartitionof=/modem
 /dsp           emmc    /dev/block/bootdevice/by-name/dsp                         flags=backup=1;subpartitionof=/modem
@@ -24,7 +24,7 @@ product		/product		ext4		display="Product";logical
 /efs2          emmc    /dev/block/bootdevice/by-name/modemst2                    flags=backup=1;subpartitionof=/efs1
 /efsc          emmc    /dev/block/bootdevice/by-name/fsc                         flags=backup=1;subpartitionof=/efs1
 /efsg          emmc    /dev/block/bootdevice/by-name/fsg                         flags=backup=1;subpartitionof=/efs1
-/persist       ext4    /dev/block/bootdevice/by-name/persist                     flags=display="Persist"
+/persist       ext4    /dev/block/bootdevice/by-name/persist                     flags=display="Persist";backup=1
 /persist_image emmc    /dev/block/bootdevice/by-name/persist                     flags=display="Persist";flashimg=1
 
 #extras
@@ -32,12 +32,12 @@ product		/product		ext4		display="Product";logical
 /tz               emmc     /dev/block/bootdevice/by-name/tz           flags=display="tz";backup=1;flashimg=1
 /vbmeta           emmc     /dev/block/bootdevice/by-name/vbmeta       flags=display="vbmeta";backup=1;flashimg=1
 
-/misc             emmc     /dev/block/bootdevice/by-name/misc
-/keystore         emmc     /dev/block/bootdevice/by-name/keystore
-/ssd              emmc     /dev/block/bootdevice/by-name/ssd
-/frp              emmc     /dev/block/bootdevice/by-name/frp
-/ddr              emmc     /dev/block/bootdevice/by-name/ddr
-/devinfo          emmc     /dev/block/bootdevice/by-name/devinfo
+/misc             emmc     /dev/block/bootdevice/by-name/misc         flags=backup=1
+/keystore         emmc     /dev/block/bootdevice/by-name/keystore     flags=backup=1
+/ssd              emmc     /dev/block/bootdevice/by-name/ssd          flags=backup=1
+/frp              emmc     /dev/block/bootdevice/by-name/frp          flags=backup=1
+/ddr              emmc     /dev/block/bootdevice/by-name/ddr          flags=backup=1
+/devinfo          emmc     /dev/block/bootdevice/by-name/devinfo      flags=backup=1
 /abl              emmc     /dev/block/bootdevice/by-name/abl          flags=display="abl";backup=1;flashimg=1
 /xbl              emmc     /dev/block/bootdevice/by-name/xbl          flags=display="xbl";backup=1;flashimg=1
 /apdp             emmc     /dev/block/bootdevice/by-name/apdp         flags=display="apdp";backup=1;flashimg=1
