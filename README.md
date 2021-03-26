@@ -30,6 +30,8 @@ Release Date | 2021, January 08
 
 - Sideload
 
+- Vibration
+
 ## To compile
 
 - build/envsetup.sh
