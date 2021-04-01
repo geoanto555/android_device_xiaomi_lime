@@ -135,7 +135,3 @@ PLATFORM_VERSION := 21.1.0
 TW_DEVICE_VERSION := $(shell date -u +"%d-%m-%Y") by geoanto555
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-#Init
-TARGET_INIT_VENDOR_LIB := libinit_lime
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lime
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
